@@ -5,6 +5,7 @@ import subprocess
 import time
 import signal
 import os
+import random
 from pathlib import Path
 from oled_ctl import fade
 from datetime import datetime
@@ -94,7 +95,8 @@ while True:
     ]    
     if not scripts:
         continue
-    scr = scripts[int(time.time()) % len(scripts)]
+    #scr = scripts[int(time.time()) % len(scripts)]
+    scr = random.choice(scripts)
 
     # Rotazione opzionale
     rotate_val = int(read_config(f"{scr.stem}_rotate", 0))
