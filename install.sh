@@ -10,7 +10,7 @@ mkdir -p "$OLED_DIR/animations"
 echo "Copia dei file..."
 cp oled_ctl.py "$OLED_DIR/"
 cp oled_manager.py "$OLED_DIR/"
-cp animations/demo_opts.py "$OLED_DIR/animations/"
+cp animations/*.py "$OLED_DIR/animations/"
 
 echo "Scarico demo_opts.py aggiornato da GitHub..."
 wget -q -O "$OLED_DIR/animations/demo_opts.py" \
