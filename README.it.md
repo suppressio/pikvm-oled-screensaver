@@ -21,7 +21,7 @@ cd pikvm-oled-screensaver
 ro
 ```
 
-`install.sh` copia il programma e le animazioni in `/usr/share/kvmd-oled/`, scarica `demo_opts.py` (l'aiuto per il display degli esempi luma), poi crea, abilita e avvia il servizio `oled-manager`.
+`install.sh` copia il programma in `/usr/share/kvmd-oled/`, scarica `demo_opts.py` (l'aiuto per il display degli esempi luma), poi crea, abilita e avvia il servizio `oled-manager`.
 
 Per aggiungere altre animazioni (prima `rw`): `./fetch_animations.sh` chiede se scaricare solo quelle di base (`matrix`, `game_of_life`) o tutti gli esempi luma.
 

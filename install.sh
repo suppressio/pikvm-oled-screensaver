@@ -10,7 +10,11 @@ mkdir -p "$OLED_DIR/animations"
 echo "Copia dei file..."
 cp oled_ctl.py "$OLED_DIR/"
 cp oled_manager.py "$OLED_DIR/"
-cp animations/*.py "$OLED_DIR/animations/"
+cp animations/demo_opts.py "$OLED_DIR/animations/"
+# Proposta da provare sul PiKVM: demo_opts.py non è nel repository (lo scarica
+# il wget qui sotto), quindi con set -e la riga sopra ferma l'installazione su
+# un clone pulito; questa copia invece le animazioni incluse.
+# cp animations/*.py "$OLED_DIR/animations/"
 
 echo "Scarico demo_opts.py aggiornato da GitHub..."
 wget -q -O "$OLED_DIR/animations/demo_opts.py" \
